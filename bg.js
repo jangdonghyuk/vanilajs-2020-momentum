@@ -7,7 +7,7 @@ function handleLImgLoad() {
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `${imgNumber + 1}.jpg`;
+  image.src = `/image/${imgNumber + 1}.jpg`;
   image.addEventListener("loadend", handleLImgLoad);
   image.classList.add("bgImage");
   body.prepend(image);
